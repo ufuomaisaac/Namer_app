@@ -47,6 +47,7 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            //Text('A random AWESOME idea:'),
             BigCard(pair: pair),
             SizedBox(height: 10),
             ElevatedButton(
@@ -83,7 +84,7 @@ class BigCard extends StatelessWidget {
       color: theme.colorScheme.primary,    // ← And also this.
       child: Padding(
         padding: const EdgeInsets.all(20),
-        
+
         child: Text(
           pair.asLowerCase,
           style: style,
